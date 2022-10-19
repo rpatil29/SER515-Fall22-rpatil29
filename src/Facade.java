@@ -2,7 +2,7 @@ public class Facade {
 
 	private int UserType;
 
-	private Product nProductCategory : int;
+	private int nProductCategory;
 
 	private Product theSelectedProduct;
 

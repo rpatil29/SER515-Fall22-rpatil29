@@ -18,6 +18,7 @@ public abstract class Person {
 
 	}
 
-	public abstract void createProductMenu():ProductMenu();
+	public abstract ProductMenu createProductMenu();
+	
 
 }

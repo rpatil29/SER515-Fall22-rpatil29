@@ -4,8 +4,8 @@ public class Seller extends Person {
 
 	}
 
-	public int createProductMenu() {
-		return 0;
+	public ProductMenu createProductMenu() {
+		return null;
 	}
 
 }
