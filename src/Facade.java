@@ -39,8 +39,29 @@ public class Facade {
 			System.exit(-1);
 		}
 		
+		System.out.println("Implementing Visitor Pattern");
+		remind();
 		
-	}
+		System.out.println("Iterator Pattern implemented");
+		
+		ClassProductList cpl = new ClassProductList();
+		Iterator iterate = (Iterator) cpl.createIterator();	
+		
+		
+		OfferingIterator oi = new OfferingIterator();
+		OfferingList ol = new OfferingList(); 
+		Iterator iterator2 = ol.createIterator(); 
+ 		while(oi.hasNext(iterate)) {
+			System.out.println(iterator2.next());
+			System.out.println(oi.Next(iterate));
+			
+		}
+ 		
+ 		System.out.println("End of iterator Pattern");
+ 		
+ 		sc.close();
+		
+		}
 	
 	public int login() {
 		System.out.println("========= Login Screen =============");
@@ -84,27 +105,28 @@ public class Facade {
 		return -1;
 	}
 
-	public void addTrading() {
+	public void addTrading(Trading trading) {
+		trading.addTrading();
 
 	}
 
-	public void viewTrading() {
-		
+	public void viewTrading(Trading trading) {
+		trading.viewTrading();		
 	}
 
-	public void decideBidding() {
-
+	public void decideBidding(Trading trading) {
+		trading.decideBidding();
 	}
 
-	public void discussBidding() {
-
-	}
-
-	public void submitBidding() {
-
+	public void submitBidding(Trading trading) {
+		trading.submitBidding();
 	}
 
 	public void remind() {
+		System.out.println("Calling reminder and visitor classes");
+		ReminderVisitor remind = new ReminderVisitor();
+		ClassProductList cpl = new ClassProductList();
+		cpl.accept(remind);
 
 	}
 
@@ -112,7 +134,7 @@ public class Facade {
 	 *  
 	 */
 	public void createUser(UserInformation userInformation) {
-
+		userInformation.createUser();
 	}
 
 	public void createProductList(ProductMenu pm, int userType) {
@@ -120,7 +142,8 @@ public class Facade {
 
 	}
 
-	public void AttachProductToUser() {
+	public void AttachProductToUser(ProductMenu pm) {
+		pm.AttachProducttoUser();
 
 	}
 
@@ -128,8 +151,9 @@ public class Facade {
 		return null;
 	}
 
-	public void productOperation() {
+	public void productOperation(ProductMenu pm) {
 
+		pm.productOperation();
 	}
 
 }

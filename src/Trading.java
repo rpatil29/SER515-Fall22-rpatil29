@@ -8,4 +8,24 @@ public class Trading {
 
 	}
 
+	public void addTrading() {
+		System.out.println("Add the trading details");
+		
+	}
+
+	public void viewTrading() {
+		System.out.println("View the trading details");
+		
+	}
+
+	public void decideBidding() {
+		System.out.println("Decide the bidding");
+		
+	}
+
+	public void submitBidding() {
+		System.out.println("Submit Bidding");
+		
+	}
+
 }

@@ -30,7 +30,7 @@ public class Seller extends Person {
 
 	public ProductMenu createProductMenu() {
 		String test = "Produce";
-		if (test.equalsIgnoreCase("Meat")) {
+		if (test.equalsIgnoreCase("Produce")) {
 			return new MeatProductMenu();
 		} else {
 			return new ProduceProductMenu();

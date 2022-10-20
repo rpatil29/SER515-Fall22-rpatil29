@@ -1,15 +1,25 @@
-import java.util.Collection;
+import java.util.*;
 
 public class ClassProductList {
 
-	private Collection<Product> product;
 
 	private ReminderVisitor reminderVisitor;
 
 	private ProductIterator productIterator;
 
-	public void accept(NodeVisitor visitor) {
+	private Hashtable<String, List<String>> product;
+
+	public Reminder accept(NodeVisitor visitor) {
+		System.out.println("Product List Reminder");
+		return visitor.visitProduct(this);
 
 	}
-
+	
+	
+	
+	public Iterator createIterator()
+	{
+	    product = DriverCode.productInfo;
+		return product.values().iterator();
+	}
 }
