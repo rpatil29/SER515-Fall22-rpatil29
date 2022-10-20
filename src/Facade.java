@@ -1,5 +1,13 @@
 import java.util.*;
 
+/**
+ * SER-515 Facade class to take care of the facade pattern it calls the classes
+ * for bridge pattern, factory pattern, visitor pattern, iterator pattern
+ * 
+ * @author Rushikesh Patil, rpatil29@asu.edu
+ * @version 1.0
+ * @since 10-19-2022
+ */
 public class Facade {
 
 	private int UserType;

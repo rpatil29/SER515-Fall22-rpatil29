@@ -1,4 +1,10 @@
-
+/**
+ * SER-515 PersonFactory Class
+ * 
+ * @author Rushikesh Patil, rpatil29@asu.edu
+ * @version 1.0
+ * @since 10-19-2022
+ */
 public class PersonFactory extends Person{
 
 	PersonFactory(ProductMenu productMenu) {

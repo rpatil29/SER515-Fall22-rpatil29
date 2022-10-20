@@ -1,3 +1,10 @@
+/**
+ * SER-515 MeatProductMenu
+ * 
+ * @author Rushikesh Patil, rpatil29@asu.edu
+ * @version 1.0
+ * @since 10-19-2022
+ */
 public class MeatProductMenu implements ProductMenu {
 
 	public void showMenu(int UserType) {

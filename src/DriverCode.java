@@ -1,6 +1,14 @@
 import java.io.*;
 import java.util.*;
 
+/**
+ * SER-515 Main class to take care of the txt documents and convert to Hashtables.
+ * Initiate Facade pattern
+ * 
+ * @author Rushikesh Patil, rpatil29@asu.edu
+ * @version 1.0
+ * @since 10-19-2022
+ */
 public class DriverCode {
 	
 	public static Hashtable<String, List<String>> userProduct = new Hashtable<>(); 

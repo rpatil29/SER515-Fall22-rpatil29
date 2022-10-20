@@ -1,3 +1,11 @@
+/**
+ * SER-515 Product Menu Abstract Class
+ * 
+ * @author Rushikesh Patil, rpatil29@asu.edu
+ * @version 1.0
+ * @since 10-19-2022
+ */
+
 public abstract interface ProductMenu {
 
 	public abstract void showMenu(int UserType);
